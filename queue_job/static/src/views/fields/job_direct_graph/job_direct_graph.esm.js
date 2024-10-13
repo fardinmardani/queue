@@ -41,7 +41,7 @@ export class JobDirectGraph extends Component {
     }
 
     get context() {
-        return this.props.record.getFieldContext(this.props.name);
+        return this.props.record.evalContext;
     }
 
     get model() {
